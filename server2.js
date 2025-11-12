@@ -6,7 +6,7 @@ let reqCount = 0;
 
 app.use((req, res, next) => {
     reqCount++
-    console.log(`Total requests so far: ${reqCount}`)
+    console.log(`Total requests so far: ${reqCount} , port: ${PORT}`)
     next()
 })
 

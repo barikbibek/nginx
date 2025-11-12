@@ -11,7 +11,7 @@ app.use((req, res, next) => {
 })
 
 app.get('/', (req, res) => {
-    res.send(`Hello! This server(1) has handled ${reqCount} requests so far.`);
+    res.send(`Hello! This server(1) has handled ${reqCount} requests so far. PORT: ${PORT}`);
 })
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`))
